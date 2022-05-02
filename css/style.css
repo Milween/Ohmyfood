@@ -1,0 +1,83 @@
+/* 
+
+ID :
+Logo et Titres : Shrikhand 
+Text : roboto
+
+*/
+/* CSS global sur les éléments */
+
+*
+{
+  font-family:'Roboto', 'sans-serif';
+  box-sizing: border-box;
+}
+
+body
+{
+  background-color: var(--background-color);
+  margin: 0;
+}
+
+:root {
+--primary-color: #9356DC;
+--secondary-color: #FF79DA;
+--tertiary-color: #99E2D0;
+--background-color: #F6F6F6;
+--background-color-white:#FFF;
+--Shadow-color: #B5B5B5;
+}
+
+/* btn : bouton classique et 'Commander' */
+.btn {
+}
+
+/* btn-fonction : bouton type pour fonction */
+.btn__fonction {
+
+}
+
+/* btn 'nouveau' vignette restaurant */
+.btn__nouveau {
+
+}
+/* Card restaurant */
+.restaurant__child {
+
+}
+
+/* Header */
+
+.fa-arrow-left {
+  display:none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+  box-shadow: 0.5rem 0 1rem Black;
+}
+
+.homepage {
+  width: 100%;
+}
+
+/* Menu de Navigation */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: #EAEAEA;
+    fa-location-bot {
+      padding: 1.5rem;
+    }
+  }
+
+.titre-roboto-2 {
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+
