@@ -7,33 +7,26 @@ Text : roboto
 */
 /* CSS global sur les éléments */
 
-#header {
-  background-color: blue;
-}
-.header {
-  background-color: green;
-}
-
-
 *
 {
   font-family:'Roboto', 'sans-serif';
   box-sizing: border-box;
+  font-weight: 400;
 }
 
+:root {
+  --primary-color: #9356DC;
+  --secondary-color: #FF79DA;
+  --tertiary-color: #99E2D0;
+  --background-color: #F6F6F6;
+  --background-color-white:#FFF;
+  --shadow-color: #B5B5B5;
+  }
+  
 body
 {
   background-color: var(--background-color);
   margin: 0;
-}
-
-:root {
---primary-color: #9356DC;
---secondary-color: #FF79DA;
---tertiary-color: #99E2D0;
---background-color: #F6F6F6;
---background-color-white:#FFF;
---Shadow-color: #B5B5B5;
 }
 
 /* btn : bouton classique et 'Commander' */
@@ -56,6 +49,10 @@ body
 
 /* Header */
 
+header {
+  color: var(--background-color-white);
+}
+
 .fa-arrow-left {
   display:none;
 }
@@ -63,12 +60,13 @@ body
 .logo {
   display: flex;
   justify-content: center;
-  padding: 1.5rem 0;
-  box-shadow: 0.5rem 0 1rem Black;
+  padding:1.5rem 0;
+  box-shadow: 0rem 0rem 0.5rem var(--shadow-color);
 }
 
-.homepage {
-  width: 100%;
+.logo img {
+  width: 180px;
 }
+
 
 /* Menu de Navigation */
