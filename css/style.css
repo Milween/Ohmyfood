@@ -14,6 +14,9 @@ Text : roboto
   font-weight: 400;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
 :root {
   --primary-color: #9356DC;
   --secondary-color: #FF79DA;
@@ -82,7 +85,48 @@ nav {
 
 h2 {
   font-family: 'Roboto', 'sans-serif';
-  font-size: 0.9rem;
-  font-weight: bold;
-  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.3rem;
+}
+
+/* Espace de Réservation */
+
+.reserved {
+  text-align: center;
+  padding: 0 2rem;
+  background-color:var(--background-color);
+}
+
+h1 {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.btn button {
+  font-family:'Roboto', 'sans-serif';
+  font-size: 1rem;
+  font-weight:500;
+  color: #FFF;
+  border-radius: 5rem;
+  border: none;
+  padding: 1.5rem 2.5rem;
+
+  background: rgb(147,86,220);
+  background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+
+  box-shadow: 0rem 0.2rem 0.5rem 0.1rem var(--shadow-color);
+}
+
+.btn button:hover {
+  transform: scale(1.05);
+  transition: all 80ms ease-in;
+  opacity: 0.95;
 }
