@@ -50,7 +50,9 @@ body
 /* Header */
 
 header {
-  color: var(--background-color-white);
+  background-color: var(--background-color-white);
+  margin: 0;
+  position: relative;
 }
 
 .fa-arrow-left {
@@ -60,7 +62,7 @@ header {
 .logo {
   display: flex;
   justify-content: center;
-  padding:1.5rem 0;
+  padding: 1.5rem 0;
   box-shadow: 0rem 0rem 0.5rem var(--shadow-color);
 }
 
@@ -70,3 +72,17 @@ header {
 
 
 /* Menu de Navigation */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+}
+
+h2 {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
