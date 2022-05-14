@@ -5,16 +5,9 @@
   align-items:center;
 }
 
-%typoh2 {
-  font-family: 'Roboto', 'sans-serif';
-  font-size: $base-size-type;
-  font-weight: 400;
-}
-
 // hover_btn //
 %hover-btn {
   transform: scale(1.05);
   transition: all 80ms ease-in;
   opacity: 0.95;
 }
-

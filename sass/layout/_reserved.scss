@@ -5,7 +5,6 @@
 
 .reserved {
   text-align: center;
-  background-color: $background-color;
   &__btn button {
     @include btn;
     &:hover {
