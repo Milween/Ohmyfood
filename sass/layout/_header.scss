@@ -1,0 +1,18 @@
+/* Header */
+
+.homepage {
+  background-color: $color-white;
+  margin: 0;
+  position: relative;
+  &__logo {
+    @extend %flex-center;
+    padding:$paddingsection;
+    box-shadow: 0rem 0rem 0.5rem $shadow-color;
+    & img {
+      width: 180px;
+    }
+  }
+}
+.fa-arrow-left {
+  display:none;
+}

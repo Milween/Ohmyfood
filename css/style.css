@@ -1,99 +1,103 @@
 @charset "UTF-8";
-/* Utils */
-/* ID :
-Logo et Titres : Shrikhand 
-Text : roboto
-*/
-/* CSS global sur les éléments */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+.search, .homepage__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reserved__btn button:hover {
+  transform: scale(1.05);
+  transition: all 80ms ease-in;
+  opacity: 0.95;
+}
+
 * {
-  font-family: "Roboto", "sans-serif";
+  font-family: "Roboto";
   box-sizing: border-box;
   font-weight: 400;
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: #F6F6F6;
+}
+
+body, p, h2 {
   margin: 0;
 }
 
-/* btn : bouton classique et 'Commander' */
-/* btn-fonction : bouton type pour fonction */
-/* btn 'nouveau' vignette restaurant */
-/* Card restaurant */
+p {
+  font-family: "Roboto", "sans-serif";
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: "Roboto", "sans-serif";
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-family: "Roboto", "sans-serif";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+section {
+  padding: 1rem;
+}
+
 /* Header */
-header {
-  background-color: var(--background-color-white);
+.homepage {
+  background-color: #FFF;
   margin: 0;
   position: relative;
+}
+.homepage__logo {
+  padding: 1rem;
+  box-shadow: 0rem 0rem 0.5rem #B5B5B5;
+}
+.homepage__logo img {
+  width: 180px;
 }
 
 .fa-arrow-left {
   display: none;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  padding: 1.5rem 0;
-  box-shadow: 0rem 0rem 0.5rem var(--shadow-color);
-}
-
-.logo img {
-  width: 180px;
-}
-
-/* Menu de Navigation */
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.search {
   background-color: #eaeaea;
+  padding: 1rem;
 }
-
-h2 {
-  font-family: "Roboto", "sans-serif";
+.search i {
+  padding-right: 0.5rem;
   font-size: 1rem;
-  font-weight: 500;
-  padding: 0.3rem;
 }
 
-/* Espace de Réservation */
+/* Réservation */
+.reserved > h1 {
+  margin: 1rem 3rem;
+}
+
 .reserved {
   text-align: center;
-  padding: 0 2rem;
-  background-color: var(--background-color);
+  background-color: #F6F6F6;
 }
-
-h1 {
-  font-family: "Roboto", "sans-serif";
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-p {
-  font-family: "Roboto", "sans-serif";
-  font-size: 1.1rem;
-  font-weight: 300;
-}
-
-.btn button {
+.reserved__btn button {
   font-family: "Roboto", "sans-serif";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   color: #FFF;
   border-radius: 5rem;
   border: none;
   padding: 1rem 2rem;
-  background: rgb(147, 86, 220);
-  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
-  box-shadow: 0rem 0.2rem 0.5rem 0.1rem var(--shadow-color);
-}
-
-.btn button:hover {
-  transform: scale(1.05);
-  transition: all 80ms ease-in;
-  opacity: 0.95;
+  margin: 2rem 0;
+  background: #9356DC;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  box-shadow: 0rem 0.2rem 0.5rem 0.1rem #B5B5B5;
 }
 
 /*# sourceMappingURL=style.css.map */

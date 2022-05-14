@@ -1,0 +1,10 @@
+// Search-bar //
+.search {
+  @extend %flex-center;
+  background-color: #eaeaea;
+  padding: $paddingsection;
+  & i {
+    padding-right: 0.5rem;
+    font-size:1rem;
+  }
+}

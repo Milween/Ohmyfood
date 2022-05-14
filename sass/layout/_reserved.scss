@@ -1,0 +1,15 @@
+/* Réservation */
+.reserved > h1 {
+  margin: 1rem 3rem;
+}
+
+.reserved {
+  text-align: center;
+  background-color: $background-color;
+  &__btn button {
+    @include btn;
+    &:hover {
+      @extend %hover-btn;
+    }
+  }
+}
