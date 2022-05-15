@@ -1,0 +1,40 @@
+.header {
+  &--withbackarrow {
+    position: relative;
+  }
+
+  &__arrow {
+    position: absolute;
+    left: 2rem;
+    @extend %flex-center;
+    color:black;
+    font-size: 1.2rem;
+  }
+}
+
+.BG__img {
+  max-width: 100%;
+  max-height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  position: relative;
+  z-index: 1;
+
+  margin-top:-5rem;
+  
+  background-color: $background-color;
+  border-radius: 2rem 2rem 0 0;
+  &__header {
+    padding: 1rem 2rem 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-family: 'Shrikhand','sans-serif';
+    font-size: 1.5rem;
+  }
+}
