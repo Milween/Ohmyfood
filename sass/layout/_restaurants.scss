@@ -1,0 +1,66 @@
+.restaurant {
+  background-color: $background-color;
+  padding: $paddingsection;
+  margin-top: 1.5rem;
+  &__allcards {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 1rem;
+  }
+}
+
+.restaurant__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  background-color: $color-white;
+  
+  border-radius: 1rem;
+  overflow: hidden;
+  @include base-shadow;
+  & img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+  }
+}
+
+figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  & .restaurant__text {
+    display:flex;
+    flex-direction: column;
+  }
+}
+.heart {
+  & i {
+  font-size: 1.5rem;
+  }
+  & .fas {
+    opacity: 0;
+    @include gradient (180deg);
+    cursor:pointer;
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+  }
+  &:hover .fas {
+    transition: all 150ms ease-in;
+    display: inline;
+    opacity: 1;
+  }
+  &:hover .far {
+    display:none;
+  }
+}
+
+.restaurant__text > h1 {
+  font-size:$h1-card-size;
+  font-weight: 500;
+  margin: 0;
+}

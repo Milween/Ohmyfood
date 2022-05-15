@@ -2,21 +2,18 @@
 $primary-color:#9356DC;
 $secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
-$background-color:#E8E8E8;
+$background-color:#F6F6F6;
 $color-white:#FFF;
 
 
 // Typo //
 $base-size-type:1rem; 
 $h1-size:1.5rem;
+$h1-card-size:1.1rem;
 
 // Padding & margin //
-$paddingsection: 1rem;
+$paddingsection:1rem;
 
 // shadow btn //
-$shadow-color:#B5B5B5;
+$shadow-color:#D5D5D5;
 $btn_shadow: 0rem 0.2rem 0.5rem 0.1rem;
-
-// Gradiant //
-$gradiant-color: $primary-color;
-$gradiant:linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);

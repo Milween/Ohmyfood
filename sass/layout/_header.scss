@@ -7,7 +7,7 @@
   &__logo {
     @extend %flex-center;
     padding:$paddingsection;
-    box-shadow: 0rem 0rem 0.5rem $shadow-color;
+    box-shadow: 0rem 0rem 0.5rem #919191;
     & img {
       width: 180px;
     }

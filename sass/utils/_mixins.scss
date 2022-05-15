@@ -1,24 +1,13 @@
-// Button type //
-@mixin btn{
-  font-family:'Roboto', 'sans-serif';
-  font-size: $base-size-type;
-  font-weight:300;
-  color: $color-white;
-  border-radius: 5rem;
-  border: none;
-  padding: 1rem 2rem;
-  margin: 2rem 0;
-    
-  background:$gradiant-color;
-  background:$gradiant;
-
-  box-shadow: $btn-shadow $shadow-color;
-}
-
 @mixin base-shadow {
   box-shadow: $btn-shadow $shadow-color;
 }
 
 @mixin btn-lighten($color:$primary-color) {
   background-color: lighten($color: $primary-color, $amount: 25)
+}
+
+// Gradiant // 
+@mixin gradient($degree) {
+  background: $primary-color;
+  background:linear-gradient(($degree), $primary-color 25%, $secondary-color 100%);
 }

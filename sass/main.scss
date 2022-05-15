@@ -2,6 +2,7 @@
 @import "./utils/placeholder";
 @import "./utils/mixins";
 
+@import "./composants/buttons";
 
 @import "./base/base";
 
@@ -9,3 +10,5 @@
 @import "./layout/nav.scss";
 @import "./layout/reserved";
 @import "./layout/fonctionnement";
+@import "./layout/restaurants";
+
