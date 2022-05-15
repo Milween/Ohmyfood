@@ -14,7 +14,7 @@
 }
 
 * {
-  font-family: "Roboto";
+  font-family: "Roboto", "sans-serif";
   box-sizing: border-box;
   font-weight: 400;
 }
@@ -46,8 +46,13 @@ h2 {
   font-weight: 400;
 }
 
-section {
+section, footer {
   padding: 1rem;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Header */
@@ -151,7 +156,7 @@ section {
 .restaurant {
   background-color: #F6F6F6;
   padding: 1rem;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 4rem 0;
 }
 .restaurant__allcards {
   display: flex;
@@ -163,6 +168,7 @@ section {
 .restaurant__card {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 100%;
   max-width: 800px;
   background-color: #FFF;
@@ -174,6 +180,22 @@ section {
   width: 100%;
   height: 10rem;
   object-fit: cover;
+}
+
+.new {
+  position: relative;
+}
+.new::before {
+  content: "Nouveau";
+  position: absolute;
+  padding: 0.5rem;
+  font-family: "Roboto", "sans-serif";
+  font-size: 0.8rem;
+  color: #1b6150;
+  background-color: #99E2D0;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 0.25rem;
 }
 
 figcaption {
@@ -208,10 +230,30 @@ figcaption .restaurant__text {
   display: none;
 }
 
-.restaurant__text > h1 {
+.restaurant__text > h2 {
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0;
+}
+
+footer {
+  background-color: #353535;
+  color: #FFF;
+}
+footer .title {
+  font-family: "Shrikhand", "Roboto", "sans-serif";
+  font-size: 1rem;
+}
+footer ul {
+  margin-top: 1rem;
+  padding: 0;
+  list-style-type: none;
+}
+footer li {
+  padding: 0.2rem;
+}
+footer i {
+  padding-right: 0.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

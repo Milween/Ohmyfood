@@ -1,7 +1,7 @@
 .restaurant {
   background-color: $background-color;
   padding: $paddingsection;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 4rem 0;
   &__allcards {
     display:flex;
     flex-direction: column;
@@ -13,6 +13,7 @@
 .restaurant__card {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 100%;
   max-width: 800px;
   background-color: $color-white;
@@ -26,7 +27,12 @@
     object-fit: cover;
   }
 }
-
+.new {
+  position: relative;
+  &::before {
+  @include btn-nouveau;
+  } 
+}
 figcaption {
   display: flex;
   justify-content: space-between;
@@ -58,8 +64,7 @@ figcaption {
     display:none;
   }
 }
-
-.restaurant__text > h1 {
+.restaurant__text > h2 {
   font-size:$h1-card-size;
   font-weight: 500;
   margin: 0;

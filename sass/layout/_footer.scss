@@ -1,0 +1,21 @@
+footer {
+  background-color: #353535;
+  color: $color-white;
+  & .title {
+    font-family: 'Shrikhand','Roboto', 'sans-serif';
+    font-size: 1rem;
+  }
+  & ul {
+    margin-top:1rem;
+    padding: 0;
+    list-style-type: none;
+  }
+  & li {
+    padding: 0.2rem;
+  }
+  & i 
+  {
+    padding-right:0.2rem;
+  }
+}
+
