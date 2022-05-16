@@ -38,3 +38,61 @@
     font-size: 1.5rem;
   }
 }
+
+.sousmenu {
+  width: 100%;
+  &__title {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 300;
+    
+    padding-bottom:0.3rem;
+    margin: 1rem 0;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 4rem;
+      height:0.2rem;
+      
+      background-color: $tertiary-color;
+    }
+  }
+}
+
+.menuitem {
+  display:flex;
+  width: 100%;
+
+  border-radius: 1rem;
+  background-color: #FFF;
+  
+  cursor: pointer;
+  overflow: hidden;
+
+  padding:1rem;
+  margin-bottom: 1rem;
+
+  box-shadow: $btn_shadow $shadow-color;
+  &__header {
+    flex-grow: 1;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+
+.menuitem__header > h2 {
+  font-size:$h1-card-size;
+  font-weight: 500;
+  margin: 0;
+}
+
+.commander {
+  @extend %flex-center;
+}

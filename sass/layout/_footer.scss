@@ -1,10 +1,6 @@
 footer {
   background-color: #353535;
   color: $color-white;
-  &__title {
-    font-family: 'Shrikhand','Roboto', 'sans-serif';
-    font-size: 1rem;
-  }
   & ul {
     margin-top:1rem;
     padding: 0;
@@ -19,3 +15,7 @@ footer {
   }
 }
 
+.footer__title {
+  font-family:"Shrikhand", 'Roboto', 'sans-serif';
+  font-size:1.2rem;
+}
