@@ -65,6 +65,7 @@
 .menuitem {
   display:flex;
   width: 100%;
+  overflow: hidden;
 
   border-radius: 1rem;
   background-color: #FFF;
@@ -76,6 +77,13 @@
   margin-bottom: 1rem;
 
   box-shadow: $btn_shadow $shadow-color;
+
+  animation: itemappear .8s;
+  animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
+
   &__header {
     flex-grow: 1;
   }
@@ -85,13 +93,54 @@
     justify-content: flex-end;
     align-items: flex-end;
   }
+
+  &__done {
+    @extend %flex-center;
+    width: 4rem;
+    margin: -1rem -5rem -1rem 1rem;
+
+    transition-duration: .5s;
+    background-color: $tertiary-color;
+  }
+
+  &:hover &_done {
+    margin-right: -1rem;
+  }
+
+  &__wrap {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+  }
+
+  &:hover &__wrap {
+    transform: rotate(0);
+  }
+
+  &__icon {
+  color: $tertiary-color;
+  }
 }
+
 
 .menuitem__header > h2 {
   font-size:$h1-card-size;
   font-weight: 500;
   margin: 0;
 }
+
+@for $i from 1 to 10 {
+  .delay-#{$i} {
+    animation-delay: #{$i/10}s;
+  }
+}
+
 
 .commander {
   @extend %flex-center;
