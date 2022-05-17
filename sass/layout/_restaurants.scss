@@ -43,17 +43,21 @@ figcaption {
     flex-direction: column;
   }
 }
+
 .heart {
+  position: relative;
   & i {
   font-size: 1.5rem;
   }
   & .fas {
+    position:absolute;
     opacity: 0;
     @include gradient (180deg);
     cursor:pointer;
     background-clip:text;
     -webkit-background-clip:text;
     color:transparent;
+
   }
   &:hover .fas {
     transition: all 150ms ease-in;
@@ -61,7 +65,8 @@ figcaption {
     opacity: 1;
   }
   &:hover .far {
-    display:none;
+    transition: all 150ms ease-in;
+    opacity: 0;
   }
 }
 .restaurant__text > h2 {

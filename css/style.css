@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-.function__btn::before, .search, .header__logo, .commander, .header__arrow {
+.function__btn::before, .search, .header__logo, .commander, .menuitem__wrap, .menuitem__done, .header__arrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,6 +55,14 @@ a, a:visited {
   color: inherit;
 }
 
+@keyframes itemappear {
+  0% {
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .header--withbackarrow {
   position: relative;
 }
@@ -117,23 +125,95 @@ a, a:visited {
   background-color: #FFF;
   cursor: pointer;
   overflow: hidden;
-  padding: 1rem;
   margin-bottom: 1rem;
   box-shadow: 0rem 0.2rem 0.5rem 0.1rem #D5D5D5;
+  animation: itemappear 0.8s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  max-width: 100%;
 }
 .menuitem__header {
+  flex-basis: 0%;
+  min-width: 0;
   flex-grow: 1;
+  padding: 1rem;
 }
 .menuitem__price {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  padding: 1rem;
+}
+.menuitem__done {
+  width: 4rem;
+  transition: 0.5s;
+  margin-right: -4rem;
+  background-color: #99E2D0;
+}
+.menuitem:hover .menuitem__done {
+  margin-right: 0rem;
+}
+.menuitem__wrap {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #FFF;
+  border-radius: 5rem;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.menuitem:hover .menuitem__wrap {
+  transform: rotate(0);
+}
+.menuitem__icon {
+  color: #99E2D0;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
+
+.delay-5 {
+  animation-delay: 0.5s;
+}
+
+.delay-6 {
+  animation-delay: 0.6s;
+}
+
+.delay-7 {
+  animation-delay: 0.7s;
+}
+
+.delay-8 {
+  animation-delay: 0.8s;
+}
+
+.delay-9 {
+  animation-delay: 0.9s;
 }
 
 .menuitem__header > h2 {
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0;
+}
+
+.truncated {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .header {
@@ -286,10 +366,14 @@ figcaption .restaurant__text {
   flex-direction: column;
 }
 
+.heart {
+  position: relative;
+}
 .heart i {
   font-size: 1.5rem;
 }
 .heart .fas {
+  position: absolute;
   opacity: 0;
   background: #9356DC;
   background: linear-gradient(180deg, #9356DC 25%, #FF79DA 100%);
@@ -304,7 +388,8 @@ figcaption .restaurant__text {
   opacity: 1;
 }
 .heart:hover .far {
-  display: none;
+  transition: all 150ms ease-in;
+  opacity: 0;
 }
 
 .restaurant__text > h2 {
