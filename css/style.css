@@ -85,6 +85,13 @@ h1 {
 
 h2 {
   font-family: "Roboto", "sans-serif";
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+h3 {
+  font-family: "Roboto", "sans-serif";
   font-size: 1rem;
   font-weight: 400;
 }
@@ -312,7 +319,7 @@ a, a:visited {
 }
 
 /* Réservation */
-.reserved > h1 {
+.reserved > h2 {
   margin: 1rem 3rem;
 }
 
@@ -393,7 +400,6 @@ a, a:visited {
   justify-content: center;
   gap: 1rem;
 }
-
 .restaurant__card {
   display: flex;
   flex-direction: column;
@@ -416,6 +422,21 @@ a, a:visited {
   height: 10rem;
   object-fit: cover;
 }
+.restaurant__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.restaurant__text {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant__text > h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+}
 
 .new {
   position: relative;
@@ -431,17 +452,6 @@ a, a:visited {
   top: 1rem;
   right: 1rem;
   border-radius: 0.25rem;
-}
-
-figcaption {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-figcaption .restaurant__text {
-  display: flex;
-  flex-direction: column;
 }
 
 .heart {
@@ -468,12 +478,6 @@ figcaption .restaurant__text {
 .heart:hover .far {
   transition: all 150ms ease-in;
   opacity: 0;
-}
-
-.restaurant__text > h2 {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin: 0;
 }
 
 footer {
