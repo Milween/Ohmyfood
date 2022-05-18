@@ -28,6 +28,7 @@
   
   background-color: $background-color;
   border-radius: 2rem 2rem 0 0;
+
   &__header {
     padding: 1rem 2rem 2rem 1rem;
     display: flex;
@@ -39,9 +40,20 @@
     font-size: 1.5rem;
   }
 }
+.sousmenus {
+  @media (min-width:992px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+  }
+}
 
 .sousmenu {
   width: 100%;
+  @media (min-width:992px) {
+    width:33%;
+  }
   &__title {
     position: relative;
     text-transform: uppercase;
@@ -94,6 +106,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding: 1rem;
+    font-weight: bold;
   }
 
   &__done {

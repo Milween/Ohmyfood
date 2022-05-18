@@ -4,19 +4,26 @@
   margin: 1.5rem 0 4rem 0;
   &__allcards {
     display:flex;
-    flex-direction: column;
-    align-items:center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
+    @media (min-width:992px) {
+      align-items:center;
+      }
+    }
   }
-}
 
 .restaurant__card {
   display: flex;
   flex-direction: column;
   position: relative;
   width: 100%;
-  max-width: 800px;
   background-color: $color-white;
+  @media (min-width:992px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+  }
   
   border-radius: 1rem;
   overflow: hidden;
