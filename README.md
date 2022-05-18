@@ -1,4 +1,4 @@
-# Ohmyfood
+# [P3] Ohmyfood !
 
 Thrid project for 'OpenClassrooms' training path JavaScript React.
 
@@ -18,12 +18,13 @@ https://github.com/Milween/Ohmyfood.git
 
 2. Run NPM packages :
 
-``terminal : npm install
+terminal : npm install
 
 3. run Sass :
 
-`terminal : npm install sass
+terminal : npm install sass
 
+## enjoy this project ;)
 
 
 
