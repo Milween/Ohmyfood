@@ -10,6 +10,21 @@ do : HTML / CSS / Sass
 
 don't : JavaScript / Framewrok CSS / Inline CSS.
 
-### Test project :
+## Test project :
 
-Clone this repo https://github.com/Milween/Ohmyfood.git
+1. Clone this repo 
+
+https://github.com/Milween/Ohmyfood.git
+
+2. Run NPM packages :
+
+``terminal : npm install
+
+3. run Sass :
+
+`terminal : npm install sass
+
+
+
+
+
