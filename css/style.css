@@ -393,11 +393,6 @@ a, a:visited {
   justify-content: center;
   gap: 1rem;
 }
-@media (min-width: 992px) {
-  .restaurant__allcards {
-    align-items: center;
-  }
-}
 
 .restaurant__card {
   display: flex;
