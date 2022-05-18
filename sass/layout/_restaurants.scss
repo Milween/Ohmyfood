@@ -10,16 +10,16 @@
   }
 }
 .restaurant__card {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  background-color: $color-white;
   @media (min-width:992px) {
     display: flex;
     flex-wrap: wrap;
     width: 48%;
   }
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background-color: $color-white;
   
   border-radius: 1rem;
   overflow: hidden;
