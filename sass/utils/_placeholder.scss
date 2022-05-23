@@ -9,5 +9,6 @@
 %hover-btn {
   transform: scale(1.05);
   transition: all 80ms ease-in;
-  opacity: 0.95;
+  filter: brightness(1.05);
+  box-shadow: #D5D5D5 0.5rem 0.5rem 0.5rem 0.1rem;
 }
